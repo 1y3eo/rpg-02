@@ -96,9 +96,12 @@ GameObject:
   - component: {fileID: 4020787479639605000}
   - component: {fileID: 4020787479639605015}
   - component: {fileID: 4020787479639605002}
+  - component: {fileID: 3667686499751868628}
   - component: {fileID: 4020787479639605014}
   - component: {fileID: 4020787479639605013}
-  - component: {fileID: 3667686499751868628}
+  - component: {fileID: 2597466743427876362}
+  - component: {fileID: 1273773028}
+  - component: {fileID: 1273773029}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -211,6 +214,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!210 &3667686499751868628
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020787479639605012}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!114 &4020787479639605014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,14 +250,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0dce3b44c93fac4185bdfa0082e6691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &3667686499751868628
-SortingGroup:
+--- !u!114 &2597466743427876362
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4020787479639605012}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0857d7e00ffbd3f47b2ad63e85068436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  deathVFXPrefab: {fileID: 8378183710474847989, guid: 902068b558812bb42a30a59735ecbd0d, type: 3}
+  knockBackThrust: 15
+--- !u!114 &1273773028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020787479639605012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eacce2f60911864c821979135ab6692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 891eaa0b00c375d4f8df2e6c04b3b981, type: 2}
+  restoreDefaultMatTime: 0.2
+--- !u!114 &1273773029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020787479639605012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cecbeb2fc751e7247ac0c1e37be8ad34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
